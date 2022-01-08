@@ -1,5 +1,6 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
+# Created by Bernie Conrad, 1/8/2022
 
 import argparse 
 from os.path import exists
@@ -62,7 +63,7 @@ def main():
         writer.writeheader()
         writer.writerows(results)
 
-    print("Done.")
+    print("Done, spreadsheet created in the local directory called results.csv!")
 
 if __name__ == '__main__':
     main()
