@@ -1,7 +1,8 @@
 import { createChatBotMessage } from "react-chatbot-kit";
 import { questions } from "../questions.js";
 
-const set = questions[Math.floor(Math.random() * questions.length)];
+const setIndex = Math.floor(Math.random() * questions.length);
+const set = questions[setIndex];
 let initials = [];
 for (let str of set) {
   if (str !== "PATIENT RESPONDS") {
@@ -13,6 +14,7 @@ for (let str of set) {
 
 const config = {
   initialMessages: initials.map((q) => createChatBotMessage(q)),
+  setIndex: setIndex,
 };
 
 export default config;

@@ -5,7 +5,7 @@ class ActionProvider {
     this.createClientMessage = createClientMessage;
   }
 
-  handleHello() {
+  handleMessage() {
     const message = this.createChatBotmessage("Hello. Nice to meet you.");
 
     this.setState((prev) => ({
