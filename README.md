@@ -1,5 +1,7 @@
 # P&BS Research Chatbot
 
+![UCSB Wordmark](images/ucsb_wordmark.png)
+
 This is a project done for a honors research project conducted by Pauline Yang for PSY 197 at UCSB. This chatbot and related tools was created by Bernie Conrad and Ori Mizrahi (01/2022).
 
 ## Running the front end locally
