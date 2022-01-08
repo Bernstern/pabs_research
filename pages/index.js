@@ -8,12 +8,17 @@ import ActionProvider from "../chatbot/ActionProvider.js";
 
 export default function Home() {
   return (
-    <div>
-      <Chatbot
-        config={config}
-        messageParser={MessageParser}
-        actionProvider={ActionProvider}
-      />
-    </div>
+    <>
+      <Head>
+        <title>Chat Window</title>
+      </Head>
+      <div>
+        <Chatbot
+          config={config}
+          messageParser={MessageParser}
+          actionProvider={ActionProvider}
+        />
+      </div>
+    </>
   );
 }
