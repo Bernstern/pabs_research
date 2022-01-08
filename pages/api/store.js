@@ -1,10 +1,10 @@
 import { MongoClient } from "mongodb";
 const uri = `mongodb+srv://client:${process.env.mongo_password}@maincluster.iszy6.mongodb.net/data?retryWrites=true&w=majority`;
-
 export default async function handler(req, res) {
   // Validate the query
-  if (!("question_id" in req.query) || !("response" in req.query)) {
-    res.status(400).json({ status: "Missing query parameters" });
+  const body = JSON.parse(req.body);
+  if (!("question_id" in body) || !("response" in body)) {
+    res.status(400).json({ status: "Missing POST body parameters" });
     return;
   }
 
@@ -13,11 +13,10 @@ export default async function handler(req, res) {
   try {
     // Connect to the database
     await client.connect();
-
     // Package and send the result to the database
     await client.db("data").collection("responses").insertOne({
-      question_id: req.query.question_id,
-      response: req.query.response,
+      question_id: body.question_id,
+      response: body.response,
     });
 
     res.status(200).json({ status: "Logged successfully" });

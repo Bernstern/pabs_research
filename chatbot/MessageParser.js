@@ -5,7 +5,7 @@ class MessageParser {
   }
 
   parse(message) {
-    this.actionProvider.handleMessage();
+    this.actionProvider.handleMessage(message);
   }
 }
 
