@@ -6,6 +6,7 @@ class ActionProvider {
     this.createChatbotMessage = createChatbotMessage;
     this.setState = setStateFunc;
     this.createClientMessage = createClientMessage;
+    this.responded = false;
   }
 
   async postToDatabase(message, questionIndex) {
@@ -16,17 +17,19 @@ class ActionProvider {
   }
 
   async handleMessage(message) {
-    // const botMessage = this.createChatbotMessage("Hello. Nice to meet you.");
-    await this.postToDatabase(message, config.setIndex);
-    const questionSet = questions[config.setIndex];
-    const restOfQuestions = questionSet.slice(
-      questionSet.indexOf("PATIENT RESPONDS") + 1
-    );
-    const arr = restOfQuestions.map((q) => this.createChatbotMessage(q));
-    this.setState((prev) => ({
-      ...prev,
-      messages: [...prev.messages, ...arr],
-    }));
+    if (sessionStorage.getItem("responded") !== "true") {
+      await this.postToDatabase(message, config.setIndex);
+      const questionSet = questions[config.setIndex];
+      const restOfQuestions = questionSet.slice(
+        questionSet.indexOf("PATIENT RESPONDS") + 1
+      );
+      const arr = restOfQuestions.map((q) => this.createChatbotMessage(q));
+      this.setState((prev) => ({
+        ...prev,
+        messages: [...prev.messages, ...arr],
+      }));
+      sessionStorage.setItem("responded", "true");
+    }
   }
 }
 

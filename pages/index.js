@@ -1,12 +1,15 @@
 import Head from "next/head";
 import Chatbot from "react-chatbot-kit";
 import "react-chatbot-kit/build/main.css";
-import { questions } from "../questions.js";
 import config from "../chatbot/config.js";
 import MessageParser from "../chatbot/MessageParser.js";
 import ActionProvider from "../chatbot/ActionProvider.js";
+import { useEffect } from "react";
 
 export default function Home() {
+  useEffect(() => {
+    sessionStorage.setItem("responded", "false");
+  });
   return (
     <>
       <Head>
