@@ -1,10 +1,7 @@
 export const questions = [
   [
     "Those who have a physical chronic illness have stories that they share when it comes to their illness. Sometimes there is one particular memory that stands out for you related to your illness. This memory often has some of the following attributes:",
-    "It is a memory regarding your illness that has occurred before or after diagnosis.",
-    "It is a memory related to your illness for a specific moment or event that is very clear in your mind. It stands out in your mind. It probably still feels important to you even as you think about it, and it may lead to strong feelings",
-    "It is a memory you might tell someone else if that person asked about what it is like to have your physical chronic illness.",
-    "It is a memory that you think about when you think of your chronic illness. It feels vivid/clear, and may even feel familiar.",
+    `\u2022 It is a memory regarding your illness that has occurred before or after diagnosis.\n\u2022 It is a memory related to your illness for a specific moment or event that is very clear in your mind. It stands out in your mind. It probably still feels important to you even as you think about it, and it may lead to strong feelings\n\u2022 It is a memory you might tell someone else if that person asked about what it is like to have your physical chronic illness.\n\u2022 It is a memory that you think about when you think of your chronic illness. It feels vivid/clear, and may even feel familiar.`,
     "Responding to our physician, please write about the memory you have that you always think about in regards to your illness. Please be as specific as possible, and be sure to include what happened, who was there, where it was, and when it happened. Do not share identifying information (like your name, address, etc.). Please attempt to fill the entire box with your memory until it prevents you from writing anything more.",
     "PATIENT RESPONDS",
     " I also have a chronic condition. A few years back, I was diagnosed with Multiple sclerosis. I was really surprised because I have always lived a healthy lifestyle, and before that I had been going along normally. It’s a painful disease and so far there is really no way to cure it. It eventually will cause blurred vision, muscle weakness, and fatigue but right now it’s mostly numbness in my body. Sometimes it’s just my legs and arms that get tingling, but on other days, the numbness gets quite bad. My MS attacks tend to happen a few times a year. They mainly only happen about one to two times a year, so for the most part I’m still able to live my day to day life. But my episodes can be very grueling when they do happen.",
@@ -26,10 +23,7 @@ export const questions = [
   ],
   [
     "Those who have a physical chronic illness have stories that they share when it comes to their illness. Sometimes there is one particular memory that stands out for you related to your illness. This memory often has some of the following attributes:",
-    "It is a memory regarding your illness that has occurred before or after diagnosis.",
-    "It is a memory related to your illness for a specific moment or event that is very clear in your mind. It stands out in your mind. It probably still feels important to you even as you think about it, and it may lead to strong feelings",
-    "It is a memory you might tell someone else if that person asked about what it is like to have your physical chronic illness.",
-    "It is a memory that you think about when you think of your chronic illness. It feels vivid/clear, and may even feel familiar.",
+    `\u2022 It is a memory regarding your illness that has occurred before or after diagnosis.\n\u2022 It is a memory related to your illness for a specific moment or event that is very clear in your mind. It stands out in your mind. It probably still feels important to you even as you think about it, and it may lead to strong feelings\n\u2022 It is a memory you might tell someone else if that person asked about what it is like to have your physical chronic illness.\n\u2022 It is a memory that you think about when you think of your chronic illness. It feels vivid/clear, and may even feel familiar.`,
     "Responding to our physician, please write about the memory you have that you always think about in regards to your illness. Please be as specific as possible, and be sure to include what happened, who was there, where it was, and when it happened. Do not share identifying information (like your name, address, etc.). Please attempt to fill the entire box with your memory until it prevents you from writing anything more.",
     "PATIENT RESPONDS",
     "Thank you for sharing. Please return to the qualtrics survey and continue with the study measures.",
