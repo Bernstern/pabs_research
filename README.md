@@ -36,3 +36,7 @@ This script will automatically download any python packages needed to interact w
 ## Troubleshooting
 
 If there are any errors with users interacting with the chatbot or issues pulling the responses from the database, please notify us immediately, the faster we know about any bugs the less downtime there is.
+
+## References
+
+- [Link preview on iMessage](https://developer.apple.com/library/archive/technotes/tn2444/_index.html)

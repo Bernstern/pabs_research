@@ -1,45 +1,56 @@
 .react-chatbot-kit-chat-container {
-  min-width: 300px;
+  min-width: 340px;
   width: 60vw !important;
   max-width: 600px;
-  height: 60vh !important;
+  height: 80vh !important;
   border: #003660 solid 8px;
-  border-radius: 10px;
+  border-radius: 15px;
 }
 
 .react-chatbot-kit-chat-message-container {
-  height: 50vh !important;
+  height: 65vh !important;
+}
+
+.react-chatbot-kit-chat-input-container {
+  height: 10vh !important;
 }
 
 .react-chatbot-kit-chat-header {
   font-family: Avenir, "Century Gothic", sans-serif !important;
   font-weight: 600 !important;
   font-size: 16px !important;
+  height: 2vh !important;
 }
 
 .react-chatbot-kit-chat-bot-message {
   min-width: 200px;
-  width: 49vw !important;
+  width: 100% !important;
   font-family: Avenir, "Century Gothic", sans-serif !important;
   font-weight: 200 !important;
-  font-size: 16px !important;
+  font-size: 14px !important;
 }
 
 .react-chatbot-kit-chat-input {
   font-family: Avenir, "Century Gothic", sans-serif !important;
   font-weight: 200 !important;
-  font-size: 16px !important;
+  font-size: 14px !important;
 }
 
 .react-chatbot-kit-user-chat-message {
   max-width: 49vw;
   font-family: Avenir, "Century Gothic", sans-serif !important;
   font-weight: 200 !important;
-  font-size: 16px !important;
+  font-size: 14px !important;
   white-space: pre-wrap;
   word-break: break-all;
 }
 
 .react-chatbot-kit-chat-bot-message {
   white-space: pre-wrap;
+}
+
+.react-chatbot-kit-chat-btn-send-icon {
+  width: 7.5vw !important;
+  max-width: 40px !important;
+  fill: #febc11 !important;
 }
