@@ -8,6 +8,10 @@
   margin-top: 2vw;
 }
 
+.react-chatbot-kit-chat-btn-send {
+  cursor: pointer !important;
+}
+
 .react-chatbot-kit-chat-message-container {
   height: 60vh !important;
 }
