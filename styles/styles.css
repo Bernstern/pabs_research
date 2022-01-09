@@ -5,6 +5,7 @@
   height: 75vh !important;
   border: #003660 solid 8px;
   border-radius: 15px;
+  margin-top: 2vw;
 }
 
 .react-chatbot-kit-chat-message-container {
