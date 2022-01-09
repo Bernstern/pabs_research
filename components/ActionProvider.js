@@ -1,5 +1,5 @@
 import { questions } from "../questions.js";
-import config from "./config.js";
+import config from "./Config.js";
 
 class ActionProvider {
   constructor(createChatbotMessage, setStateFunc, createClientMessage) {
