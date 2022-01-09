@@ -1,0 +1,32 @@
+.react-chatbot-kit-chat-container {
+  min-width: 300px;
+  width: 60vw !important;
+  max-width: 600px;
+  height: 60vh !important;
+  border: #003660 solid 8px;
+  border-radius: 10px;
+}
+
+.react-chatbot-kit-chat-message-container {
+  height: 50vh !important;
+}
+
+.react-chatbot-kit-chat-header {
+  font-family: Avenir, "Century Gothic", sans-serif !important;
+  font-weight: 600 !important;
+  font-size: 16px !important;
+}
+
+.react-chatbot-kit-chat-bot-message {
+  min-width: 200px;
+  width: 49vw !important;
+  font-family: Avenir, "Century Gothic", sans-serif !important;
+  font-weight: 200 !important;
+  font-size: 16px !important;
+}
+
+.react-chatbot-kit-chat-input {
+  font-family: Avenir, "Century Gothic", sans-serif !important;
+  font-weight: 200 !important;
+  font-size: 16px !important;
+}
