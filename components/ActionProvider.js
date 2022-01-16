@@ -24,7 +24,7 @@ class ActionProvider {
   }
 
   clientDone(message) {
-    const terminating_messages = ["thats all", "done"];
+    const terminating_messages = ["thats all", "done", "im done"];
 
     // Strip puncutation from the message body
     const strippedMessage = message
