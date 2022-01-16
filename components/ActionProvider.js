@@ -62,7 +62,9 @@ class ActionProvider {
       const restOfQuestions = questionSet.slice(
         questionSet.indexOf("PATIENT RESPONDS") + 1
       );
-      const arr = restOfQuestions.map((q) => this.createChatbotMessage(q));
+      const arr = restOfQuestions.map((q, i) =>
+        this.createChatbotMessage(q, { delay: 2500 * i })
+      );
       this.setState((prev) => ({
         ...prev,
         messages: [...prev.messages, ...arr],
