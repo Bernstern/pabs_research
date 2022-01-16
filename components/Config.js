@@ -1,6 +1,6 @@
 import { createChatBotMessage, MyAvatar } from "react-chatbot-kit";
 import { questions } from "../questions.js";
-import BotAvatar from "../images/dr.png";
+import BotAvatar from "../images/stethoscope.png";
 
 const setIndex = Math.floor(Math.random() * questions.length);
 const set = questions[setIndex];

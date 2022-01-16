@@ -2,7 +2,7 @@ import Head from "next/head";
 import Chatbox from "../components/Chatbox";
 import "react-chatbot-kit/build/main.css";
 import { useEffect } from "react";
-import ogImage from "../images/dr_w_bg.png";
+import ogImage from "../images/stethoscope.png";
 
 export default function Home() {
   useEffect(() => {
