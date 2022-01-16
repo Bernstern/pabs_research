@@ -1,5 +1,6 @@
 import { questions } from "../questions.js";
 import config from "./Config.js";
+import toast from "react-simple-toasts";
 
 class ActionProvider {
   constructor(createChatbotMessage, setStateFunc, createClientMessage) {
@@ -13,6 +14,13 @@ class ActionProvider {
       method: "POST",
       body: JSON.stringify({ response: message, question_id: questionIndex }),
     });
+
+    // If the response is not a 200 pop an error up
+    if (response.status !== 200) {
+      toast(
+        "Error saving your response, please try again, if that fails contact the study team immediately."
+      );
+    }
   }
 
   clientDone(message) {
