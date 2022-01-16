@@ -1,4 +1,8 @@
-import { createChatBotMessage, MyAvatar } from "react-chatbot-kit";
+import {
+  createChatBotMessage,
+  MyAvatar,
+  IMessaegOptions,
+} from "react-chatbot-kit";
 import { questions } from "../questions.js";
 import BotAvatar from "../images/stethoscope.png";
 
@@ -27,7 +31,9 @@ const Avatar = () => {
 };
 
 const config = {
-  initialMessages: initials.map((q) => createChatBotMessage(q)),
+  initialMessages: initials.map((q) =>
+    createChatBotMessage(q, { delay: 5000 })
+  ),
   setIndex: setIndex,
   botName: "your physician",
   customStyles: {
