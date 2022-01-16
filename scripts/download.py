@@ -6,6 +6,7 @@ import argparse
 from os.path import exists
 import subprocess
 import sys
+import json
 import csv
 
 def install(package):
@@ -53,7 +54,9 @@ def main():
 
     results = []
     for document in cursor:
-        results.append({"question_id": document["question_id"], "response": document["response"]})
+        # Merge the response list into one string
+        response = " ".join(json.loads(document["response"]))
+        results.append({"question_id": document["question_id"], "response": response})
 
     print(f"Found {len(results)} responses, creating a csv.")
     
