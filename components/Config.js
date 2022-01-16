@@ -31,8 +31,8 @@ const Avatar = () => {
 };
 
 const config = {
-  initialMessages: initials.map((q) =>
-    createChatBotMessage(q, { delay: 5000 })
+  initialMessages: initials.map((q, i) =>
+    createChatBotMessage(q, { delay: 2500 * i })
   ),
   setIndex: setIndex,
   botName: "your physician",
