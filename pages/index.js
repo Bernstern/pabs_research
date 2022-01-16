@@ -7,6 +7,7 @@ import ogImage from "../images/stethoscope.png";
 export default function Home() {
   useEffect(() => {
     sessionStorage.setItem("responded", "false");
+    sessionStorage.setItem("responses", "[]");
   });
   return (
     <>
